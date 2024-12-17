@@ -34,9 +34,19 @@ document.addEventListener("keyup", function (e) {
       <p>100多年的历史，是一段充满艰辛与胜利的光辉岁月。工人、农民和全体人民团结一心，共同铸就了伟大的成就。</p>
       <p>在中国共产党的领导下，中国成功消除了贫困，取得了举世瞩目的经济发展，确立了在国际社会的重要地位。科技、教育、文化等领域取得了飞跃式进步，中国已经成为维护世界和平与发展的重要力量。</p>
       <p>回顾历史，展望未来。中国共产党将继续带领全国人民，为实现更大的繁荣与和平不懈奋斗！</p>
-      <p>让我们共同铭记历史，开创辉煌的未来！</p>`
+      <p>让我们共同铭记历史，开创辉煌的未来！</p>
+
+      <button id="playButton" class="play-button">播放音频</button>
+      <audio loop id="audioPlayer">
+        <source src="songs/march-of-the-volunteers.mp3" type="audio/mp3">
+      </audio>
+      `
 
     document.getElementsByClassName("footer")[0].style.color = goldColor;
     document.getElementsByClassName("footer")[0].textContent = "© 2024 庆祝中国共产党 纪念页面";
+
+    const playButton = document.getElementById("playButton");
+    const audioPlayer = document.getElementById("audioPlayer");
+    playButton.addEventListener("click", () => { audioPlayer.play(); });
   }
 });

@@ -50,3 +50,32 @@ body {
   margin: 0 auto;
   line-height: 1.8;
 }
+
+
+.play-button {
+  background-color: #d70000;
+  color: #ffd700;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 20px 40px;
+  border: 3px solid #ffd700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #b30000;
+  border-color: #ffcc00;
+  transform: translateY(-3px);
+}
+
+.play-button:active {
+  transform: translateY(2px);
+}
+
+/* テキストの装飾 */
+.play-button::before {
+  content: "▶ ";
+  font-size: 1.2rem;
+}
