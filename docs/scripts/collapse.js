@@ -8,5 +8,6 @@ document.getElementById("collapse-target").addEventListener("click", function() 
       "<p>赤旗は決して地に落ちず、共産主義の理想は再び燃え上がる。</p>" +
       "<p>この Web ページにコマンドを打てば同志達の夢は続く</p>";
     this.removeEventListener("click", arguments.callee);
+    this.classList.add("animate__fadeIn");
   }, 2000);
 });
