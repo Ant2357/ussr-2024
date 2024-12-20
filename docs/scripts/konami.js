@@ -22,6 +22,8 @@ document.addEventListener("keyup", function (e) {
     alert("没有共产党就没有新中国");
 
     const goldColor = "#FFD800";
+    document.getElementsByClassName("snow-container")[0].remove();
+
     document.getElementsByClassName("header")[0].style.color = goldColor;
     document.getElementsByClassName("header-title")[0].textContent = "庆祝中国共产党";
 
