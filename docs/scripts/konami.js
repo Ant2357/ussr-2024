@@ -40,6 +40,9 @@ document.addEventListener("keyup", function (e) {
       <audio loop id="audioPlayer">
         <source src="songs/march-of-the-volunteers.mp3" type="audio/mp3">
       </audio>
+
+      <p><img src="imgs/mao.png" alt="プロパガンダポスター『世界革命人民の中心、赤い太陽の毛主席万歳！』" class="mao-img"></p>
+      <h1 class="mao-text">共产主义永远不会停止</h1>
       `
 
     document.getElementsByClassName("footer")[0].style.color = goldColor;

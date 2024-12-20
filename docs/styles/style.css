@@ -79,3 +79,13 @@ body {
   content: "▶ ";
   font-size: 1.2rem;
 }
+
+
+.mao-img {
+  width: 100%;
+}
+
+.mao-text {
+  color: #FFD700;
+  background-color: #d70000;
+}
